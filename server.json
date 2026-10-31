@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "com.liliphant/mcp",
+  "name": "com.liliphant.mcp/mcp",
   "title": "Liliphant",
   "description": "Ask questions about your meetings and get answers quoted from what people actually said.",
   "version": "1.0.0",

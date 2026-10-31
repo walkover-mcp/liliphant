@@ -38,7 +38,7 @@ claude mcp add --transport http liliphant https://mcp.liliphant.com/mcp
 then run `/mcp` and sign in.
 
 ## MCP Registry
-[server.json](server.json) is the listing for the official MCP Registry, as `com.liliphant/mcp`. The `com.liliphant` name is proven by owning the `liliphant.com` domain.
+[server.json](server.json) is the listing for the official MCP Registry, as `com.liliphant.mcp/mcp`. The `com.liliphant.mcp` name is proven by owning the `mcp.liliphant.com` domain.
 
 One-time setup: create a signing key and publish its public half on `liliphant.com` (Git Bash or any shell with OpenSSL):
 ```bash
@@ -49,7 +49,7 @@ Add the printed line as a TXT record on `liliphant.com`. Keep `mcp-registry-key.
 
 Publish (bump `version` first for any later change):
 ```bash
-mcp-publisher login dns --domain liliphant.com --private-key "$(openssl pkey -in mcp-registry-key.pem -noout -text | grep -A3 'priv:' | tail -n +2 | tr -d ' :\n')"
+mcp-publisher login dns --domain mcp.liliphant.com --private-key "$(openssl pkey -in mcp-registry-key.pem -noout -text | grep -A3 'priv:' | tail -n +2 | tr -d ' :\n')"
 mcp-publisher publish
 ```
 

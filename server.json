@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.liliphant/mcp",
+  "title": "Liliphant",
+  "description": "Ask questions about your meetings and get answers quoted from what people actually said.",
+  "version": "1.0.0",
+  "websiteUrl": "https://liliphant.com",
+  "repository": {
+    "url": "https://github.com/walkover-mcp/liliphant",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/stuff.thingsofbrand.com/liliphant.walkover.in/images/img1_liliphant.walkover.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.liliphant.com/mcp"
+    }
+  ]
+}
